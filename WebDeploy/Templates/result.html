@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prediction Result</title>
+    </head>
+    <body>
+        <h1 class="text-center">Prediction Result</h1>
+
+        <div class="text-center">
+            <img src="data:image/png;base64,{{ plot_url }}" alt="Plot Image" class="img-fluid"/>
+        </div>
+
+        {% if prediction %}
+            <p class="text-center">Prediction: {{ prediction }}</p>
+        {% endif %}
+    </body>
+</html>
